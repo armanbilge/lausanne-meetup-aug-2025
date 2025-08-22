@@ -3,3 +3,4 @@
 .scala-build
 .vscode
 *.js
+.idea

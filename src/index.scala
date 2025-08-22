@@ -1,6 +1,7 @@
 //> using platform js
 //> using dep com.armanbilge::calico::0.2.3
 //> using dep com.armanbilge::calico-router::0.2.3
+//> using dep org.typelevel::cats-effect-cps::0.5.0
 //> using jsModuleKind es
 
 import calico.*
@@ -48,5 +49,10 @@ object MeetupApp extends IOWebApp:
 
   def widgets = NonEmptyList.of(
     Widget("Dorothy", "oz", oz),
-    Widget("Hello World", "hello", div(()))
+    Widget("Hello World", "hello", div(())),
+    Widget(
+      "Vitaly",
+      "vitaly",
+      vitaly.coolStuff(),
+    )
   )
