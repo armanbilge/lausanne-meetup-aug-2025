@@ -21,10 +21,8 @@ jobs:
         with:
           scala-cli-version: 1.8.4
       - run: scala-cli --power package src/
-      - name: Publish site
-        if: github.event_name != 'pull_request'
+      - if: github.event_name != 'pull_request'
         uses: peaceiris/actions-gh-pages@v4.0.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: site/target/docs/site
-          keep_files: true
+          publish_dir: .
