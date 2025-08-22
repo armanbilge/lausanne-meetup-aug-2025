@@ -48,5 +48,6 @@ object MeetupApp extends IOWebApp:
 
   def widgets = NonEmptyList.of(
     Widget("Dorothy", "oz", oz),
-    Widget("Hello World", "hello", div(()))
+    Widget("Hello World", "hello", div(())),
+    Widget("Anton & Mia", "antonmia", antonmia)
   )
