@@ -54,6 +54,7 @@ object MeetupApp extends IOWebApp:
     Widget(
       "Vitaly",
       "vitaly",
-      vitaly.coolStuff(),
-    )
+      vitaly.coolStuff()
+    ),
+    Widget("More cats", "morecats", morecats)
   )
